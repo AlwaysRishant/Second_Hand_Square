@@ -1,0 +1,79 @@
+.additem,.formcol{
+    background-color:darkslategray;
+    width: 50%;
+}
+.form{
+    margin-left: 24%;
+    margin-top: 8%;
+}
+.card-img{
+    height: 200px;
+}
+#notavailable
+{
+    width: 15%;
+    border-radius: 100%;
+    margin-left: 43%;
+    margin-top: 12%;
+}
+#notfound{
+    width: 20%;
+    border-radius: 100%;
+    margin-left: 43%;
+    margin-top: 12%;
+}
+.sellimage{
+    border-radius: 100%;
+    width: 12%;
+    height: 12%;
+}
+.userimage{
+    border-radius: 100%;
+    width: 40px;
+    height:40px;
+}
+@media (max-width:1500px) {
+    #notfound,
+    #notavailable{
+        width: 40%;
+        margin-left: 30%;
+        background-color: blanchedalmond;
+    }
+  }
+  @media (max-width:1100px) {
+    .additem{
+        width: 100%;
+    }
+    .button{
+        margin-left: 25%;
+    }
+  }
+  @media (max-width:990px) {
+    .form{
+        width: 70%;
+        margin-left: 18%;
+    }
+  }
+  @media (max-width:550px) {
+    .form{
+        width: 100%;
+        margin: 0%;
+    }
+  }
+    .form2{
+        margin-top: 9%;
+        margin-left: 35%;
+        width: 30%;
+    }
+    @media (max-width:800px) {
+        .form2{
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+    @media (max-width:400px) {
+        .form2{
+            width: 100%;
+            margin: 0%;
+        }
+    }
