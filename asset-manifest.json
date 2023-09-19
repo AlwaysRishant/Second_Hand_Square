@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Second_Hand_Square/static/css/main.9bf2fba2.css",
+    "main.js": "/Second_Hand_Square/static/js/main.a396093b.js",
+    "index.html": "/Second_Hand_Square/index.html",
+    "main.9bf2fba2.css.map": "/Second_Hand_Square/static/css/main.9bf2fba2.css.map",
+    "main.a396093b.js.map": "/Second_Hand_Square/static/js/main.a396093b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bf2fba2.css",
+    "static/js/main.a396093b.js"
+  ]
+}
