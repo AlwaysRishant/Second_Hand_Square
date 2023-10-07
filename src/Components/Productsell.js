@@ -18,15 +18,18 @@ export default function Productsell({ data, email }) {
         .then((response) => {
           if (response.ok) {
             alert("Product Deleted successfully");
+           window.location.reload();
           }
         })
         .catch((error) => {
           alert("error occur in removing the product " + error);
+          window.location.reload();
+
         });
     } catch (error) {
       alert("Error in removing the product " + error);
+      window.location.reload();
     }
-    window.location.reload();
   };
   return (
     <div>
@@ -40,10 +43,10 @@ export default function Productsell({ data, email }) {
           )}
           {data.map((product) => (
             <div className="col bg-black">
-              <div className="card mb-3 rounded-3 h">
+              <div className="card mb-3 rounded-3 h-100">
                 <div className="card-header">
                   <img
-                    className="card-img mb-3"
+                    className="card-img mb-3 pho_img"
                     src={`${product.image1}`}
                     alt="not found"
                   />
@@ -68,7 +71,7 @@ export default function Productsell({ data, email }) {
                       HandleClick(product);
                     }}
                   >
-                    Buy Now
+                  {email !== "1"?"See Details":"Buy Now"}
                   </a>
                   {email !== "1" && (
                     <a

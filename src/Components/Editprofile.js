@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState} from "react";
 import "../addItem.css";
 export default function Editprofile({
   userdetail,
@@ -108,6 +108,7 @@ export default function Editprofile({
         }
       }
     }
+  
   };
   return (
     <>
@@ -116,7 +117,9 @@ export default function Editprofile({
           className="row g-3 border border-2 border-black rounded-4 formcol form"
           onSubmit={HandleSubmit}
         >
+          
           <h1 className="text-center">{header}</h1>
+          <span className="text-danger info">double click to register or update</span>
           <hr />
           <div className="col-md-4">
             <label htmlFor="image" className="form-label">

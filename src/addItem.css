@@ -6,6 +6,17 @@
     margin-left: 24%;
     margin-top: 8%;
 }
+.info{
+    text-align: right;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pho_img{
+    transition: 1s;
+}
+.pho_img:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
 .card-img{
     height: 200px;
 }

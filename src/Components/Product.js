@@ -23,7 +23,7 @@ export default function Product() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const email = queryParams.get("email");
-  const emailObj = { email: email };
+  const emailObj = { email: email};
   useEffect(() => {
     fetch(
       `http://127.0.0.1:2022/olx_clone/getItemDetail?email=${encodeURIComponent(
@@ -52,10 +52,20 @@ export default function Product() {
   };
   const Handlesubmit = (e) => {
     e.preventDefault();
-    fetch(
-      `http://127.0.0.1:2022/olx_clone/searchItem?email=${encodeURIComponent(
+    let url="";
+    if(!myadsstatus)
+    {
+      url=`http://127.0.0.1:2022/olx_clone/searchItem?email=${encodeURIComponent(
         email
       )}&searchtext=${encodeURIComponent(searchText)}`
+    }
+    else{
+      url=`http://127.0.0.1:2022/olx_clone/searchItemAds?email=${encodeURIComponent(
+        email
+      )}&searchtext=${encodeURIComponent(searchText)}`
+    }
+    fetch(
+      url
     )
       .then((response) => response.json())
       .then((data) => {
